@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>Animation</title>
+<style>
+div{
+color:#00308F;
+background-color:WHITE;
+border:2px solid;
+width:100px;
+text-align:center;
+position: relative;
+fontSize:'8em'
+}
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+$("#a").click(function() {
+$("div").animate({left:"300px"},'4000');
+$("div").animate({width:"430px"},'4000');
+$("div").animate({height:"200px"},'4000');
+$("div").animate({fontSize:"10em"},'4000');
+$("div").animate({fontSize:'10em'},function(){
+$(this).css("color","green")
+});
+
+});
+});
+</script>
+</head>
+<body>
+<div>B2</div>
+<button id="a">TOGGLE</button>
+
+</body>
+</html>

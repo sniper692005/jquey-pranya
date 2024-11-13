@@ -1,0 +1,38 @@
+<html>
+ <head>
+<title> Animation </title>
+<style>
+    div{
+        color:green;
+        background-color:blue;
+	border:2px solid;
+	width:50px;
+	text-align:center;
+	position: relative;
+       }
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <script>
+	$(document).ready(function(){
+	$("#a").click(function() {
+	$("div").animate({left:"60px"});
+	$("div").animate({height:"110px"});
+	$("div").animate({width:"250px"});
+	$("div").animate({fontSize:"5em"});
+        });
+	$("#b").click(function() {
+	$("div").animate({right:"300px"});
+	});
+        });
+  </script>
+ </head>
+<body>
+ <div> Ayush </div>
+   <button id="a">To Right</button>
+   <button id="b">To Left</button>
+</body>
+</html>
+
+

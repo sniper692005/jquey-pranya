@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title> FadeIn </title>
+</head>
+<body>
+    <div id="d1" style="display: none; background-color: red;">
+        Hello 
+    </div>
+    <br><br>
+    <div  id="d2" style="display: none; background-color: green;">
+        Hello 
+    </div>
+    <br><br>
+    <div  id="d3" style="display: none; background-color: blue ;color: aliceblue;">
+        Hello 
+    </div>
+    <br><br>
+    <button id="b1">Fade In</button>
+    <button id="b2">Fade Out</button>
+    <button id="b3">Fade Toggle</button>
+    <button id="b4">Fade To</button>
+
+    <script>
+        $(document).ready(function(){
+            $('#b1').click(function(){
+                $('#d1').fadeIn();
+                $('#d2').fadeIn("Slow");
+                $('#d3').fadeIn(2000);
+            });
+ 	    $('#b2').click(function(){
+                $('#d1').fadeOut();
+                $('#d2').fadeOut("Slow");
+                $('#d3').fadeOut(2000);
+            });
+ 
+ 	    $('#b3').click(function(){
+                $('#d1').fadeToggle();
+                $('#d2').fadeToggle("Slow");
+                $('#d3').fadeToggle(2000);
+            });
+
+ 	    $('#b4').click(function(){
+                $('#d1').fadeTo("slow",0.50);
+                $('#d2').fadeTo(110,0.50);
+                $('#d3').fadeTo(1000,0.70);
+            });
+
+        });
+    </script>
+</body>
+</html>

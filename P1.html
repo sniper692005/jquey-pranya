@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jQuery-3.3.1.min.js"></script>
+  <script>
+  $(document).ready(function() {
+
+  $("#b1").click(function() {
+  $("h1").hide();
+  });
+ 
+  $("#b2").click(function() {
+  $("h1").show();
+  });
+ 
+  $("#b3").click(function() {
+  $("h1").toggle();
+  });
+  });
+  </script>
+</head>
+
+<body>
+<h1> JQuery </h1>
+<p> Hello World </p>
+<button id="b1"> Hide </button>
+<button id="b2"> Show </button>
+<button id="b3"> Toggle </button>
+</body>
+<html>

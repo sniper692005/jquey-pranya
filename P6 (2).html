@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <div id="about">
+        <div id="show" style="background-color: blueviolet;">
+            Click Here To Show My Details
+        </div>
+        <div id="ab" style="display:none">
+            <h4>Name : Ayush Pranay</h4>
+            <h4>Regd : 2341016414</h4>
+            <h4>Sec :2G2</h4>
+            <div>
+                <div id="hide" style="background-color: burlywood;">
+                    Click Here To Hide My Details
+                </div>    
+                <br>
+            </div>
+        </div>
+        *<br><br>
+        <button>Toggle</button>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $('#show').click(function(){
+                $('#ab').slideDown();
+            })
+            $('#hide').click(function(){
+                $('#ab').slideUp();
+            })
+            $('button').click(function(){
+                $('#ab').slideToggle();
+            })
+        });
+    </script>
+</body>
+</html>
